@@ -1,6 +1,7 @@
 % LM Studio Implementation using MATLAB example
 % Ahmad Faisal Ayob, 11 Sept. 2024
-% Run the LM Studio
+% Load the model, check on the model lines, that this example is using xtuner/llava-phi-3-mini-gguf/llava-phi-3-mini-f16.gguf
+% Run the LM Studio Server
 % Define the URL
 url = 'http://127.0.0.1:1234/v1/chat/completions';
 
