@@ -1,5 +1,6 @@
 % LM Studio Implementation using MATLAB example
-% Ahmad Faisal Ayob, 11 Sept. 2024
+% Copyright 2024 Ahmad Faisal Ayob, VSG Labs Sdn Bhd, 11 Sept. 2024
+
 % Load the model, check on the model lines, that this example is using xtuner/llava-phi-3-mini-gguf/llava-phi-3-mini-f16.gguf
 % Run the LM Studio Server
 % Define the URL
