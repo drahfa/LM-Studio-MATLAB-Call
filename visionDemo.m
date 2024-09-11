@@ -67,3 +67,22 @@ catch ME
         disp('For more details, use the "getReport" function with the error object.');
     end
 end
+
+
+% Decode Base64 to a byte array
+byteArray = matlab.net.base64decode(base64Image);
+
+% Convert the byte array to an image
+% Write the byte array to a temporary file and read it back as an image
+tempFileName = 'temp_image.png';  % Or use jpg, based on the image type
+fid = fopen(tempFileName, 'w');
+fwrite(fid, byteArray, 'uint8');
+fclose(fid);
+
+% Step 3: Read and display the image
+img = imread(tempFileName);
+imshow(img);
+
+% Optionally delete the temporary file
+delete(tempFileName);
+
