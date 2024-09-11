@@ -29,7 +29,7 @@ function [content] = analyzeImage(message, imagePath)
     img = imread(imagePath);
 
     % Step 2: Resize the image to have a maximum width of 200 pixels, maintaining the aspect ratio
-    [height, width, ~] = size(img);  % Get the image dimensions
+    [~, width, ~] = size(img);  % Get the image dimensions
 
     if width > 200
         scaleFactor = 200 / width;  % Calculate the scaling factor based on width
